@@ -1,4 +1,5 @@
 {
+  pkgs,
   ...
 }:
 
@@ -18,4 +19,8 @@
         MINSTOP=hwmon4/device/pwm1=0
     '';
   };
+
+  environment.systemPackages = with pkgs; [
+    lm_sensors
+  ];
 }

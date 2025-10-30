@@ -21,6 +21,7 @@
     };
 
     kernelPackages = pkgs.linuxPackages_latest;
+    kernelModules = [ "coretemp" ];
 
     initrd.kernelModules = [
       "i915"

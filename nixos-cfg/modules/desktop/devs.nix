@@ -19,4 +19,10 @@
       enable = true;
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    gnumake
+    fasm
+    raylib
+  ];
 }

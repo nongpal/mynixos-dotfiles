@@ -4,7 +4,7 @@
 
 {
   imports = [
-    ./fan.nix
+    # ./fan.nix
     ./graphics.nix
     ./nvidia.nix
   ];

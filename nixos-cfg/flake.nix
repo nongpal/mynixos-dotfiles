@@ -12,5 +12,11 @@
         system = "x86_64-linux";
         modules = [ ./configuration.nix ];
       };
+
+      packages.x86_64-linux.default = nixpkgs.mkShell {
+        buildInputs = with nixpkgs; [
+          raylib
+        ];
+      };
     };
 }

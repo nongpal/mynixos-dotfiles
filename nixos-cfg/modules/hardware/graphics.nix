@@ -10,6 +10,7 @@
       enable32Bit = true;
       extraPackages = with pkgs; [
         intel-compute-runtime
+        intel-vaapi-driver
         intel-ocl
         intel-media-driver
         vulkan-loader
